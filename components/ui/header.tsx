@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <section className="container-fluid p-0 m-0 navbar_background">
         <div className="d-flex flex-row nav-row" style={{ backgroundColor: "#fff" }}>
-          <div className="col-12 col-lg-10">
+          <div className="col-12 col-lg-10 col-xl-9">
             <nav className="navbar navbar-expand-lg">
 
               <div className="container-fluid" >
@@ -41,7 +41,7 @@ const Navbar = () => {
               </div>
             </nav>
           </div>
-          <div className="col-12 col-lg-2 d-none d-lg-flex justify-content-center align-items-center">
+          <div className="col-12 col-lg-2 d-none d-lg-flex justify-content-center align-items-center nav-link-container">
             <Link className="nav-link me-3" aria-current="page" href="/">Home</Link>
             <Link className="nav-link me-5 curser-pointer" href="/gallery">Gallery</Link>
           </div>
