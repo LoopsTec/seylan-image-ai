@@ -41,9 +41,9 @@ export default function Home() {
 
     return (
         <>
-            <Layout>
+            {/* <Layout> */}
 
-                <div className='swiper-page-wrapper'>
+                <div className='swiper-page-wrapper background_home'>
                     <div className="container-fluid m-0 background_slider p-0">
                         <div className="slider_container p-0 m-0 position-relative">
                             <Link
@@ -91,7 +91,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </Layout>
+            {/* </Layout> */}
         </>
     );
 }
