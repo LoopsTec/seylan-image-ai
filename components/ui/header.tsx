@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <section className="container-fluid p-0 m-0 navbar_background">
-        <div className="d-flex flex-row" style={{ backgroundColor: "#fff" }}>
+        <div className="d-flex flex-row nav-row" style={{ backgroundColor: "#fff" }}>
           <div className="col-12 col-lg-10">
             <nav className="navbar navbar-expand-lg">
 

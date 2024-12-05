@@ -984,3 +984,20 @@ button {
 
   
 }
+
+@media screen and (min-width: 3000px) {
+  .nav-row{
+    height: 150px;
+  }
+
+  .nav-link{
+    font-size: 35px;
+    margin-inline: 40px !important;
+  }
+
+  .header-logo-1{
+    margin-top: 72px;
+    width: 266px !important;
+    height: auto;
+  }
+}
