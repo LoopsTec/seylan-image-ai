@@ -20,7 +20,7 @@
 //     useEffect(() => {
 //         const getImage = async () => {
 //             try {
-//                 const response = await fetch("https://sites.techvoice.lk/seylan-ai-backend/api/get-image-details", {
+//                 const response = await fetch("https://dashboard.seylanteens.com/api/get-image-details", {
 //                     method: "POST",
 //                     headers: {
 //                         "Content-Type": "application/json",
@@ -114,7 +114,7 @@ const ShareImage = () => {
     useEffect(() => {
         const getImage = async () => {
             try {
-                const response = await fetch("https://sites.techvoice.lk/seylan-ai-backend/api/get-image-details", {
+                const response = await fetch("https://dashboard.seylanteens.com/api/get-image-details", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -150,7 +150,7 @@ const ShareImage = () => {
         try {
             if (!id) return;
     
-            const downloadURL = `https://sites.techvoice.lk/seylan-ai-backend/api/download-image/${id}`;
+            const downloadURL = `https://dashboard.seylanteens.com/api/download-image/${id}`;
             const anchor = document.createElement('a');
             anchor.href = downloadURL;
             anchor.target = '_blank';

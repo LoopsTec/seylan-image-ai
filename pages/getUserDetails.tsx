@@ -337,7 +337,7 @@ const UserDetails: NextPage<Props> = ({ dirs }) => {
 
             // https://dashboard.yourvibe.lk/api/save-customer-data
             const response = await fetch(
-              'https://sites.techvoice.lk/seylan-ai-backend/api/save-customer-data',
+              'https://dashboard.seylanteens.com/api/save-customer-data',
               {
                 method: 'POST',
                 body: formData,

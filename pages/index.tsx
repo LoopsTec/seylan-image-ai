@@ -21,7 +21,7 @@ export default function Home() {
     // Fetch images from the API
     const fetchImages = async () => {
       try {
-        const response = await fetch('https://sites.techvoice.lk/seylan-ai-backend/api/get-completed-images');
+        const response = await fetch('https://dashboard.seylanteens.com/api/get-completed-images');
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
@@ -94,7 +94,7 @@ export default function Home() {
             <Link
               className="gallery_link"
               href='/imageSwiper'
-              // href="https://sites.techvoice.lk/seylan-ai-backend/api/get-completed-images"
+              // href="https://dashboard.seylanteens.com/api/get-completed-images"
             >
               <h3>Image Swiper</h3>
             </Link>

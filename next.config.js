@@ -7,7 +7,7 @@ const nextConfig = {
   //   return config;
   // },
   images: {
-    domains: ['localhost','cdn.discordapp.com','sites.techvoice.lk']
+    domains: ['localhost','cdn.discordapp.com','sites.techvoice.lk','dashboard.seylanteens.com']
   }
   
 };

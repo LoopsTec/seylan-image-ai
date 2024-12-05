@@ -16,7 +16,7 @@ const Gallery = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get('https://sites.techvoice.lk/seylan-ai-backend/api/get-gallery-images');
+                const response = await axios.get('https://dashboard.seylanteens.com/api/get-gallery-images');
                 console.log('API response:', response.data);
                 setImages(response.data.images); // Adjust based on API structure
             } catch (error) {
