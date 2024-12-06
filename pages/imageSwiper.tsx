@@ -16,6 +16,8 @@ interface ApiImage {
     image_url: string; // Assuming the API response includes 'image_url' for the image path
 }
 
+
+
 export default function Home() {
     const [images, setImages] = useState<ApiImage[]>([]);
 
@@ -28,16 +30,25 @@ export default function Home() {
                     throw new Error(`Error: ${response.statusText}`);
                 }
                 const data = await response.json();
-                setImages(data.images || []); // Adjust based on actual API structure
+                setImages(data.images || []); 
             } catch (error) {
                 console.error('Failed to fetch images:', error);
-                setImages([]); // Fallback to empty array
+                setImages([]); 
             }
         };
 
 
         fetchImages();
+
+        const interval = setInterval(() => {
+            window.location.reload();
+        }, 500000);
+
+        return () => clearInterval(interval);
     }, []);
+
+
+    
 
     return (
         <>
@@ -49,7 +60,7 @@ export default function Home() {
                             <Link
                                 className="gallery_link"
                                 href='/gallery'
-                                // href="https://dashboard.seylanteens.com/api/get-completed-images"
+                                // href="https://sites.techvoice.lk/seylan-ai-backend/api/get-completed-images"
                             >
                                 <h3>Gallery</h3>
                             </Link>
